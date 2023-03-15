@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "953179198267",
+    "project_id": "savify-62f1c",
+    "storage_bucket": "savify-62f1c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953179198267:android:9ec178ab921d052a239d1e",
+        "android_client_info": {
+          "package_name": "com.example.savify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953179198267-vv4rkqb6m8h7e9h48c3aq3dfrdju4nr2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8Sjwud46YgOukPd-Or22sjfkmSJJ5yfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953179198267-vv4rkqb6m8h7e9h48c3aq3dfrdju4nr2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
