@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Savify"
         tools:targetApi="31">
         <activity
+            android:name=".baseline_add"
+            android:exported="false" />
+        <activity
             android:name="com.example.budget.SignupActivity"
             android:exported="false" />
         <activity

@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="maroon">#c51e38</color>
     <color name="grey">#d2d2d2</color>
+    <color name="green">#4CAF50</color>
+    <color name="red">#D51111</color>
+    <color name="TextMain">#252323</color>
 </resources>
