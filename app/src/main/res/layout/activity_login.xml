@@ -20,33 +20,42 @@
                 android:orientation="vertical"
                 android:layout_marginTop="280dp"
                 android:padding="20dp">
+
                 <EditText
-                    android:layout_width="350dp"
-                    android:layout_height="60dp"
+                    android:inputType="text"
                     android:id="@+id/login_email"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
                     android:layout_marginTop="30dp"
                     android:background="@drawable/maroon_border"
-                    android:padding="8dp"
-                    android:hint="Email"
                     android:drawableLeft="@drawable/baseline_email_24"
                     android:drawablePadding="8dp"
-                    android:textColor="@color/black"/>
+                    android:ellipsize="end"
+                    android:layout_gravity="center"
+                    android:hint="Email"
+                    android:textColorHint="#FF000000"
+                    android:padding="8dp"
+                    android:textColor="@color/black" />
                 <EditText
-                    android:layout_width="350dp"
+                    android:layout_width="340dp"
                     android:layout_height="60dp"
                     android:id="@+id/login_password"
+                    android:inputType="text"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/maroon_border"
                     android:padding="8dp"
-                    android:hint="Password"
+                    android:layout_gravity="center"
+                    android:hint="password"
+                    android:textColorHint="#FF000000"
                     android:drawableLeft="@drawable/baseline_lock_24"
                     android:drawablePadding="8dp"
                     android:textColor="@color/black"/>
                 <Button
-                    android:layout_width="350dp"
+                    android:layout_width="340dp"
                     android:layout_height="70dp"
                     android:layout_marginTop="30dp"
                     android:text="Login"
+                    android:layout_gravity="center"
                     android:id="@+id/login_button"
                     android:textSize="18sp"
                     app:cornerRadius = "30dp"/>
