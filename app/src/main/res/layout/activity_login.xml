@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/loginbkg"
-    tools:context="com.example.budget.LoginActivity">
+    tools:context="com.example.savify.LoginActivity">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -45,7 +45,7 @@
                     android:background="@drawable/maroon_border"
                     android:padding="8dp"
                     android:layout_gravity="center"
-                    android:hint="password"
+                    android:hint="Password"
                     android:textColorHint="#FF000000"
                     android:drawableLeft="@drawable/baseline_lock_24"
                     android:drawablePadding="8dp"

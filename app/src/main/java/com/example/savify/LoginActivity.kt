@@ -1,10 +1,9 @@
-package com.example.budget
+package com.example.savify
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.savify.MainActivity
 import com.example.savify.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 

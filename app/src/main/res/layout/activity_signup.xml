@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/signupbkg"
-    tools:context="com.example.budget.SignupActivity">
+    tools:context="com.example.savify.SignupActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

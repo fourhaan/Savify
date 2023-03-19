@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    package="com.example.savify">
 
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Savify"
-        tools:targetApi="31">
+        android:theme="@style/Theme.Savify">
         <activity
-            android:name=".baseline_add"
+            android:name=".DetailedActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.budget.SignupActivity"
+            android:name=".AddTransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
         <activity
-            android:name="com.example.budget.LoginActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

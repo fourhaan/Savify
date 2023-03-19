@@ -1,4 +1,4 @@
-package com.example.budget
+package com.example.savify
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
