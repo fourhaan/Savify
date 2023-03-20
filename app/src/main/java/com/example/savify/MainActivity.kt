@@ -61,12 +61,14 @@ class MainActivity : AppCompatActivity() {
         val swipeHelper = ItemTouchHelper(itemTouchHelper)
         swipeHelper.attachToRecyclerView(recyclerview)
 
-        AddTransactionButton.setOnClickListener{
+        AddButton.setOnClickListener{
             val intent=Intent(this,AddTransactionActivity::class.java)
             startActivity(intent)
         }
 
     }
+
+
 
     private fun fetchAll(){
         GlobalScope.launch {
@@ -84,10 +86,11 @@ class MainActivity : AppCompatActivity() {
         val budgetAmount = transactions.filter { it.amount>0 }.map { it.amount }.sum()
         val expenseAmount = totalAmount - budgetAmount
 
-        balance.text = "$ %.2f".format(totalAmount)
-        budget.text = "$ %.2f".format(budgetAmount)
-        expense.text = "$ %.2f".format(expenseAmount)
+        balance.text = "₹ %.2f".format(totalAmount)
+        budget.text = "₹ %.2f".format(budgetAmount)
+        expense.text = "₹ %.2f".format(expenseAmount)
     }
+
 
     private fun undoDelete(){
         GlobalScope.launch {
@@ -95,6 +98,7 @@ class MainActivity : AppCompatActivity() {
             transactions = oldTransactions
 
             runOnUiThread {
+                transactionAdapter.setData(transactions)
                 updateDashboard()
             }
         }

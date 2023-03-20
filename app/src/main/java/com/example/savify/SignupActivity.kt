@@ -6,12 +6,9 @@ import android.os.Bundle
 import android.widget.Toast
 import com.example.savify.databinding.ActivitySignupBinding
 import com.google.firebase.auth.FirebaseAuth
-
 class SignupActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivitySignupBinding
     private lateinit var firebaseAuth: FirebaseAuth
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySignupBinding.inflate(layoutInflater)
@@ -23,24 +20,23 @@ class SignupActivity : AppCompatActivity() {
             val confirmPassword = binding.signupConfirm.text.toString()
             if (email.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()){
                 if (password == confirmPassword){
-                    firebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener{
+                    firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener{
                         if (it.isSuccessful){
-                            val intent = Intent(this,LoginActivity::class.java)
+                            val intent = Intent(this, LoginActivity::class.java)
                             startActivity(intent)
-                        } else{
-                            Toast.makeText(this,it.exception.toString(), Toast.LENGTH_SHORT).show()
+                        } else {
+                            Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
                         }
                     }
                 } else {
-                    Toast.makeText(this, "Password Does Not Match", Toast.LENGTH_SHORT)
-                        .show()
+                    Toast.makeText(this, "Password does not matched", Toast.LENGTH_SHORT).show()
                 }
-            } else{
-                Toast.makeText(this,"Fields are Empty", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Fields cannot be empty", Toast.LENGTH_SHORT).show()
             }
         }
         binding.loginRedirectText.setOnClickListener {
-            val loginIntent = Intent(this,LoginActivity::class.java)
+            val loginIntent = Intent(this, LoginActivity::class.java)
             startActivity(loginIntent)
         }
     }
